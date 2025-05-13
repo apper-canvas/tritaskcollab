@@ -42,7 +42,7 @@ function App() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.2 }}
             >
-              {getIcon('Sun')({ className: "w-5 h-5 text-yellow-400" })}
+              <>{getIcon('Sun')({ className: "w-5 h-5 text-yellow-400" })}</>
             </motion.div>
           ) : (
             <motion.div 
@@ -50,7 +50,7 @@ function App() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.2 }}
             >
-              {getIcon('Moon')({ className: "w-5 h-5 text-indigo-600" })}
+              <>{getIcon('Moon')({ className: "w-5 h-5 text-indigo-600" })}</>
             </motion.div>
           )}
         </button>

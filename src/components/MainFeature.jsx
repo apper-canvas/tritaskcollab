@@ -5,6 +5,7 @@ import getIcon from '../utils/iconUtils';
 
 // Define icons at the top
 const PlusIcon = getIcon('Plus');
+const SearchIcon = getIcon('Search');
 const XIcon = getIcon('X');
 const TrashIcon = getIcon('Trash');
 const CheckIcon = getIcon('Check');
@@ -167,7 +168,7 @@ const MainFeature = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="input-field pl-10 w-full md:w-64"
           />
-          {getIcon('Search')({ className: "absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-surface-400" })}
+          <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-surface-400" />
         </div>
         
         <div className="flex flex-wrap items-center gap-2">

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -42,7 +42,7 @@ function App() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.2 }}
             >
-              <>{getIcon('Sun')({ className: "w-5 h-5 text-yellow-400" })}</>
+              {React.createElement(getIcon('Sun'), { className: "w-5 h-5 text-yellow-400" })}
             </motion.div>
           ) : (
             <motion.div 
@@ -50,7 +50,7 @@ function App() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.2 }}
             >
-              <>{getIcon('Moon')({ className: "w-5 h-5 text-indigo-600" })}</>
+              {React.createElement(getIcon('Moon'), { className: "w-5 h-5 text-indigo-600" })}
             </motion.div>
           )}
         </button>
